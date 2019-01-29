@@ -5,15 +5,16 @@ class Counter extends Component {
     count: 0
   };
 
-  styles = {
-    fontSize: 22,
-    fontWeight: "bold"
-  };
-
   render() {
     return (
       <div>
-        <span style={this.styles} className="badge badge-secondary m-2">
+        <span
+          style={{
+            fontSize: 22,
+            fontWeight: "bold"
+          }}
+          className="badge badge-secondary m-2"
+        >
           {this.getCount()}
         </span>
         <button className="btn btn-primary btn-sm">Increment</button>
